@@ -1,0 +1,29 @@
+{
+  "name": "enot-payment/enot",
+  "type": "library",
+  "description": "Enot SDK",
+  "keywords": [
+    "enot",
+    "enot-sdk",
+    "enot-payment"
+  ],
+  "require": {
+    "php": ">= 7.4",
+    "ext-json": "*",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.6",
+    "phpunit/phpunit": "^9.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Enot\\Api\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\Enot\\Api\\": "tests/"
+    }
+  }
+}
